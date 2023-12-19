@@ -122,20 +122,23 @@ const AddButton = () => {
             />
           </label>
           <label>
-            Select Audio to Upload:
+            Select Audio:
             <input
+              style={{ width: "41%", marginLeft: "1rem" }}
               type="file"
               accept="audio/*,.mp3,.wav,.ogg"
               required
               onChange={(e) => setFile(e.target.files[0])}
             />
           </label>
-          <button type="button" onClick={handleReset}>
-            Reset
-          </button>
-          <button type="button" onClick={handleSubmit}>
-            Save
-          </button>
+          <div>
+            <button type="button" onClick={handleReset}>
+              Reset
+            </button>
+            <button type="button" onClick={handleSubmit}>
+              Save
+            </button>
+          </div>
         </form>
       </div>
     </>

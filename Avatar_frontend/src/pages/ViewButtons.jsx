@@ -73,12 +73,8 @@ const ViewButtons = () => {
       </Link>
       <h1>View Buttons</h1>
       <div className="view-main-container">
-        <button
-          className="view-stop-btn"
-          onClick={stopAudio}
-          style={{ marginTop: 80 }}
-        >
-          Stop
+        <button className="view-stop-btn" onClick={stopAudio}>
+          STOP
         </button>
         <div className="view-container">
           {buttons.map((button) => {
@@ -96,7 +92,7 @@ const ViewButtons = () => {
           })}
         </div>
         <button className="view-stop-btn" onClick={stopAudio}>
-          Stop
+          STOP
         </button>
       </div>
     </>
